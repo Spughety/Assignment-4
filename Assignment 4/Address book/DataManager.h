@@ -16,12 +16,22 @@ public:
 	DataManager();
 	~DataManager();
 
-	//ifstream input("data.txt");
+	// Add a contact to fields vector
+	void addContact(string firstName, string lastName, string email, string phoneNumber);
+	
+	// Find a specific contact based on their email
+	Contact* findContact(string email);
 
 private:
+	string firstName;
+	string lastName;
+	string email;
+	string phoneNumber;
 	vector<Contact> fields;
 	string line;
-	//vector<string> splitString() { return tokens; }
+
+	vector<string> splitString(const string &text, char sep);
+
 	void writeDataFile();
-	auto readDataFile();
+	void readDataFile();
 };

@@ -1,59 +1,6 @@
-﻿  Address book.cpp
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.h(6): error C2011: 'Contact': 'class' type redefinition
-  c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.h(5): note: see declaration of 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\address book.cpp(18): error C2079: 'tim' uses undefined class 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\address book.cpp(20): error C2079: 'timothy' uses undefined class 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\address book.cpp(26): error C2079: 'timberly' uses undefined class 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\address book.cpp(32): error C2440: 'initializing': cannot convert from 'initializer list' to 'std::vector<Contact,std::allocator<_Ty>>'
-          with
-          [
-              _Ty=Contact
-          ]
-  c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\address book.cpp(32): note: No constructor could take the source type, or constructor overload resolution was ambiguous
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\address book.cpp(34): error C2079: 'x' uses undefined class 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\address book.cpp(34): error C2027: use of undefined type 'Contact'
-  c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.h(5): note: see declaration of 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\address book.cpp(43): error C2079: 'item' uses undefined class 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\address book.cpp(43): error C2027: use of undefined type 'Contact'
-  c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.h(5): note: see declaration of 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\address book.cpp(48): error C2027: use of undefined type 'Contact'
-  c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.h(5): note: see declaration of 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\address book.cpp(49): error C2027: use of undefined type 'Contact'
-  c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.h(5): note: see declaration of 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\address book.cpp(51): error C2079: 'x' uses undefined class 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\address book.cpp(51): error C2027: use of undefined type 'Contact'
-  c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.h(5): note: see declaration of 'Contact'
+﻿  pch.cpp
+  Address book.cpp
   Contact.cpp
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.h(6): error C2011: 'Contact': 'class' type redefinition
-  c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.h(5): note: see declaration of 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(12): error C2027: use of undefined type 'Contact'
-  c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.h(5): note: see declaration of 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(14): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(15): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(16): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(17): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(18): warning C4508: '{ctor}': function should return a value; 'void' return type assumed
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(21): error C2027: use of undefined type 'Contact'
-  c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.h(5): note: see declaration of 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(23): warning C4508: '{dtor}': function should return a value; 'void' return type assumed
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(26): error C2027: use of undefined type 'Contact'
-  c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.h(5): note: see declaration of 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(33): error C2550: '{ctor}': constructor initializer lists are only allowed on constructor definitions
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(33): warning C4508: '{ctor}': function should return a value; 'void' return type assumed
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(35): error C2027: use of undefined type 'Contact'
-  c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.h(5): note: see declaration of 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(36): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(39): error C2027: use of undefined type 'Contact'
-  c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.h(5): note: see declaration of 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(40): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(43): error C2027: use of undefined type 'Contact'
-  c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.h(5): note: see declaration of 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(44): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(47): error C2027: use of undefined type 'Contact'
-  c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.h(5): note: see declaration of 'Contact'
-c:\users\walke\onedrive\documents\visual studio 2017\projects\assignment 4\address book\contact.cpp(49): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
   DataManager.cpp
   Generating Code...
+  Address book.vcxproj -> C:\Users\walke\OneDrive\Documents\Visual Studio 2017\Projects\Assignment 4\x64\Debug\Address book.exe

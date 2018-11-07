@@ -51,18 +51,15 @@ void Contact::setPhoneNumber(string phoneNumber) {
 }
 
 // Still working on what to put here
-string Display() {
+string Contact::Display() {
 
-	string output = "hi";
+	ostringstream output;
 
+	output << left << setw(15) << firstName;
+	output << setw(15) << lastName;
+	output << setw(20) << email;
+	output << right << setw(15) << phoneNumber;
+	output << endl;
 
-	/*
-	cout << left << setw(15) << firstName;
-	cout << setw(15) << lastName;
-	cout << setw(20) << email;
-	cout << right << setw(15) << phoneNumber;
-	cout << endl;
-	*/
-	
-	// set stuff from file with splitString to this->whatEverVarIs
+	return output.str();
 }

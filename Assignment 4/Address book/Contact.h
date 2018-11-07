@@ -1,5 +1,7 @@
+#ifndef CONTACT_H
+#define CONTACT_H
+
 #include <string>
-#include "DataManager.h"
 using std::string;
 
 class Contact
@@ -22,7 +24,7 @@ public:
 	void setPhoneNumber(string);
 
 	
-	string Display() { return output; }
+	string Display();
 
 
 private:
@@ -33,3 +35,4 @@ private:
 	string output;
 };
 
+#endif // !CONTACT_H

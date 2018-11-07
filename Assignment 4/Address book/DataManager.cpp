@@ -17,10 +17,10 @@ DataManager::DataManager()
 
 DataManager::~DataManager()
 {
-	writeDatafile();
+	writeDataFile();
 }
 
-vector<string> splitString(const string &text, char sep) {
+vector<string> DataManager::splitString(const string &text, char sep) {
 
 	vector<string> tokens;
 	istringstream ss(text);
@@ -35,10 +35,22 @@ vector<string> splitString(const string &text, char sep) {
 }
 
 void DataManager::writeDataFile() {
+	ofstream output("data.txt");
 
+	for (size_t i = 0; i < fields.size(); i++) {
+		Contact temp = fields[i];
+
+		output << temp.getFirstName() << "\t";
+		output << temp.getLastName() << "\t";
+		output << temp.getEmail() << "\t";
+		output << temp.getPhoneNumber() << "\t";
+		output << endl;
+	}
+
+	output.close();
 }
 
-auto DataManager::readDataFile(){
+void DataManager::readDataFile(){
 	ifstream input("data.txt");
 	string line;
 	vector<Contact> fields;
@@ -54,30 +66,42 @@ auto DataManager::readDataFile(){
 		// get a line from the file, then split it on tab characters
 		getline(input, line);
 		vector<string> fieldVector = splitString(line, '\t');
+
+		if (fieldVector.size() == 4) {
+			string firstName = fieldVector[0];
+			string lastName = fieldVector[1];
+			string email = fieldVector[2];
+			string phoneNumber = fieldVector[3];
+
+			Contact person(firstName, lastName, email, phoneNumber);
+			fields.push_back(person);
+		}
 	}
 	input.close();
 }
 
-/*
-Not sure what to do with this yet
+void DataManager::addContact(string firstName, string lastName, string email, string phoneNumber) {
+	Contact newContact;
 
-string fileInput("data.txt") {
-	ifstream input("data.txt");
-	string line;
-	vector<Contact> fields;
+	newContact.setFirstName(firstName);
+	newContact.setLastName(lastName);
+	newContact.setEmail(email);
+	newContact.setPhoneNumber(phoneNumber);
 
-	if (input.fail())
-	{
-		cerr << "File not found.  Will exit..." << endl;
-		exit(1);
-	}
-
-	while (!input.eof())
-	{
-		// get a line from the file, then split it on tab characters
-		getline(input, line);
-		vector<string> fieldVector = splitString(line, '\t');
-	}
-	input.close();
+	fields.push_back(newContact);
 }
-*/
+
+Contact* DataManager::findContact(string email) {
+	string temp = email;
+	Contact tempSearch;
+
+	for (size_t i = 0; i < fields.size(); i++) {
+		tempSearch = fields[i];
+
+		if (tempSearch.getEmail() == temp) {
+			cout << endl << "Found it!" << endl;
+			return &fields[i];
+		}
+	}
+	return NULL;
+}
